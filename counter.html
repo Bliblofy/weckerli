@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>weckerli</title>
+  <meta name="author" content="Tobias Hauptmann">
+  <meta name="address" content="contact@wecker.li">
+  <meta name="description" content="Timer for presentations">
+  <meta name="viewport" content="width=device-width", initial-scale="1">
+  <link rel="stylesheet" href="css/stylenew.css">
+</head>
+<body>
+<div class="container">
+  <h1 id="headline">Welcome at Wecker.li</h1>
+  <div id="countdown">
+    <ul>
+      <!-- <li><span id="days"></span>days</li>-->
+      <!-- <li><span id="hours">00</span>Hours</li> -->
+      <li><span id="Minutes">00</span>Minutes</li>
+      <li><span id="Seconds">00</span>Seconds</li>
+    </ul>
+  </div>
+  <div class="message">
+    <div id="content">
+      <span class="emoji">🚀</span>
+      <span class="emoji">🎉</span>
+      <span class="emoji">🏎️</span>
+    </div>
+  </div>
+</div>
+<button class="open-button" onclick="openForm()">Open Settings</button>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Adjust Data</h1>
+
+    <label for="email"><b>Titel</b></label>
+    <input type="text" placeholder="Timer-Titel" value="Welcome at Wecker.li" name="email" id="Titel" required>
+
+    <label for="psw"><b>Starting Time</b></label>
+    <input type="time" placeholder="Enter Time as hh:mm" name="psw" id="time" value="15:00" required>
+
+    <button type="button" class="btn" onclick="closeForm(); changeTitle(); changeTime()">Start Timer</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <button type="button" class="btn cancel" onclick="stopCounter()">Stop</button>
+  </form>
+
+</div>
+<script src="javaScript/counterVariant.js"></script>
+</body>
+</html>
