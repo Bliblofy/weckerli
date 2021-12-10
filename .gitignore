@@ -1,5 +1,6 @@
 # ignore DS_Store files
-*.DS_Store
+.DS_Store
 
 # ignore Source Folder
-*/zz_RAW
+/zz_RAW
+/img/langeohnezoom.gif
