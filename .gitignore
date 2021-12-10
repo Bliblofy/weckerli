@@ -2,5 +2,5 @@
 .DS_Store
 
 # ignore Source Folder
-/zz_RAW
-/img/langeohnezoom.gif
+zz_RAW
+img/langeohnezoom.gif
