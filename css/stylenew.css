@@ -1,7 +1,8 @@
 * {box-sizing: border-box;}
 
 body {
-  background-image: url('../img/langeohnezoom.gif');
+  background-color: rgb(144, 237, 234);
+  /* background-image: url('../img/langeohnezoom.gif'); */
   background-size: cover;
   align-items: center;
   display: flex;
@@ -125,4 +126,4 @@ li span {
   opacity: 1;
 }
 
-div.countdown 
+div.countdown

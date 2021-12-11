@@ -1,43 +1,46 @@
-(function () {
-  const second = 1000,
+const   second = 1000,
         minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-        time = "15:00"
+        countdown = document.getElementById("countdown"),
+        content = document.getElementById("content");
 
-  let birthday = "Mar 15, 2021 15:" + time,
-      countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {
+let     time = 5;
 
-        let now = new Date().getTime(),
-            distance = countDown - now;
+console.log("log1" + "time");
 
-          //document.getElementById("days").innerText = Math.floor(distance / (day)),
-          //document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-        //do something later when date is reached
-        if (distance < 0) {
-          let headline = document.getElementById("headline"),
-              countdown = document.getElementById("countdown"),
-              content = document.getElementById("content");
+function startTimer() {
+  y = (document.getElementById("time").value); //minutes
+  x = (y * 60); //seconds
+  countdown(x);
+  console.log("startTimerbeforeIf");
+    function countdown(x) {
+      if(x) {
+          console.log(x+ " seconds left...");
+          setTimeout(countdown, 1000, --x);
+          document.getElementById("minutes").innerText = x;
+          document.getElementById("seconds").innerText = x;
+      } else {
+          // no timer needed to be cleaned up
+          console.log("Done...");
+      }
+  }
+}
 
-          headline.innerText = "Break is over, let's start again";
-          countdown.style.display = "none";
-          content.style.display = "block";
-
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
-  }());
 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
+
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
   let time = document.getElementById("time").value;
   console.log(time);
+}
+
+function changeTitle() {
+  headline.innerText = document.getElementById("Titel").value;
+}
+
+function stopCounter() {
+      stoppyBool = false;
 }
