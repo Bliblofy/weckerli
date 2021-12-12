@@ -1,15 +1,10 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-html, body {
-  height: 100%;
-  margin: 0;
-}
+* {box-sizing: border-box;}
+
 body {
-  background-image: url('../img/langeohnezoom.gif');
+  background-color: rgb(144, 237, 234);
+  /* background-image: url('../img/langeohnezoom.gif'); */
   background-size: cover;
-  /*align-items: center;*/
+  align-items: center;
   display: flex;
   font-family: -apple-system,
     BlinkMacSystemFont,
@@ -32,20 +27,23 @@ h1 {
   font-weight: normal;
   letter-spacing: .125rem;
   text-transform: uppercase;
+  font-size: 4em;
 }
 
 li {
   display: inline-block;
-  font-size: 13.5em;
+  font-size: 3.5em;
   list-style-type: none;
   padding: 1em;
   text-transform: uppercase;
+  min-width: 420px;
+  margin-top: 8%;
 }
 
 li span {
   display: block;
-  font-size: 13.5rem;
-  text-shadow: 2px 2px #000000;
+  font-size: 14.5rem;
+  text-shadow: 4px 4px #000000;
 }
 
 .message {
@@ -57,24 +55,15 @@ li span {
   padding: 1rem;
 }
 
+#time {
+    padding: 15px;
+    margin: 15px 50% 15px 40%;
+}
+
 .emoji {
   padding: 0 .25rem;
 }
 
-@media all and (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  li {
-    font-size: 1.125rem;
-    padding: .75rem;
-  }
-
-  li span {
-    font-size: 13.375rem;
-  }
-/*Foms thingy*/
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   background-color: #555;
@@ -89,6 +78,7 @@ li span {
   width: 280px;
 }
 
+/* The popup form - hidden by default */
 .form-popup {
   display: none;
   position: fixed;
@@ -141,4 +131,5 @@ li span {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-}
+
+div.countdown
