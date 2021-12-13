@@ -1,0 +1,72 @@
+body {
+  padding-bottom: 1.625rem;
+  height: 100vh;
+  background: #00b4ff;
+}
+
+img {
+max-width: 100%;
+
+}
+
+h1 {
+  justify-content: center;
+
+}
+
+/*Wolken Integration*/
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	padding-top: 50px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* integration index navigation */
+
+section {
+  margin: 0 auto;
+  max-width: 55rem;
+  padding: 1.625rem;
+}
+section.demo {
+  border: 2px dashed #e6e6e6;
+  border-radius: .8125rem;
+  box-shadow: inset 0px 0px 1.625rem rgba(0, 0, 0, 0.05);
+  margin-top: 1.625rem;
+  background-color: rgb(255,255,255,.6);
+}
+.notes {
+  color:#111111;
+}
+[href] .notes {
+  color:#e6e6e6;
+}
+p {
+  align-self: center;
+}
+.content {
+  max-width: 100%;
+
+  }
+.input_wrapper {
+  display: flex;
+	align-items: flex-start;
+	justify-content: flex;
+	flex-direction: column;
+  margin-top: 0;
+  max-width: 100%;
+}
+.input_class{
+  font-size:1em;
+  margin-top: 0;
+}
+.between {
+  margin-bottom: .5em;
+}
+.tabs-container.tabs-processed .tab-panel {
+    background-color: rgb(230,230,230,.6);
+}

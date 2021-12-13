@@ -7,19 +7,17 @@ function startTimer() {
   stoppyBool = false;
 
 countdown(userTimeInput);
-console.log("before loop" + userTimeInput);
 
+//has to be defined as async to allow for sleep beeing used
 async function countdown(x) {
       for (var j = userTimeInput; j > 0; j--) {
         if (stoppyBool){
           break;
         }
-        console.log(j);
         document.getElementById("minutes").innerText = j - 1;
         for (var i = 61; i > 0; i--) {
             if (i > 1) {
                 document.getElementById("seconds").innerText = i -2;
-                console.log(i);
                 await sleep(1000); //timeout 1000
                 if (stoppyBool){
                   break;
@@ -29,7 +27,7 @@ async function countdown(x) {
       }
    }
   }
-
+//function to enable sleep in Loop
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -43,7 +41,6 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
   let time = document.getElementById("time").value;
-  console.log(time);
 }
 
 function changeTitle() {

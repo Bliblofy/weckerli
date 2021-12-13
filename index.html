@@ -5,73 +5,36 @@
   <title>weckerli</title>
   <meta name="author" content="Tobias Hauptmann">
   <meta name="address" content="contact@wecker.li">
-  <meta name="description" content="Timer for presentations">
+  <meta name="description" content="Timer for workshops">
   <meta name="viewport" content="width=device-width", initial-scale="1">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Overpass:400,400i,600,600i,700,700i,800,800i|Zilla+Slab:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="css/tycss.css">
+  <link rel="stylesheet" href="css/styleindex.css">
 </head>
 <body>
-<div class="container">
-  <h1 id="headline">Welcome at Wecker.li</h1>
-  <div id="countdown">
-    <ul>
-      <!-- <li><span id="days"></span>days</li>-->
-      <!-- <li><span id="hours">00</span>Hours</li> https://youtu.be/tSYgbL9xByc -->
-      <li><span id="minutes">00</span>Minutes</li>
-      <li><span id="seconds">00</span>Seconds</li>
-    </ul>
-  </div>
-</div>
-<button class="open-button" onclick="openForm()">Open Settings</button>
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Adjust Data</h1>
-
-    <label for="email"><b>Titel</b></label>
-    <input type="text" placeholder="Timer-Titel" value="Welcome at Wecker.li" name="email" id="Titel" required>
-
-    <!-- <label for="time"><b>Starting Time </b></label>
-    <input type="number" id="time" name="quantity" min="1" max="99"><b> minutes<b></input> -->
-
-    <select id="time" name="time">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <!-- Zehner -->
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-      <option value="17">17</option>
-      <option value="18">18</option>
-      <option value="19">19</option>
-      <!-- Zwanziger -->
-      <option value="20">20</option>
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-      <option value="24">24</option>
-      <option value="25">25</option>
-      <option value="26">26</option>
-      <option value="27">27</option>
-      <option value="28">28</option>
-      <option value="29">29</option>
-    </select>
-
-    <button type="button" class="btn" onclick= "startTimer(); closeForm(); changeTitle()">Start Timer</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    <button type="button" class="btn cancel" onclick="stopCounter()">Stop</button>
-  </form>
-
-</div>
-<script src="javaScript/counterforLoop.js"></script>
+  <section class="links-underlined">
+  <h1>Let everyone know when to proceed after a workshop break</h1>
+  <p>Ever been in the situation to enter a running online workshop and all there is, is silence?
+  <p>Common practice in todays world is a message in the chat to let everyone know when to proceed, participants joining later don't get this message usually.</p>
+  <p>With this page, you have the possibility to set a time, share your screen and let the break clock run down. </p>
+  </section>
+  <section class="demo">
+      <p>Pick one of three designs</p>
+       <div class="tabs-container">
+  <h2 class="tab-label">Watches</h2>
+      <div class=input_wrapper>
+        <a href="rolex_omega.html"><img src="img/vorschau_rolex.png" alt=""></a>
+      </div>
+  <h2 class="tab-label collapsed">Watch movement</h2>
+      <div class=input_wrapper>
+        <a href="movement.html"><img src="img/vorschau_movement.png" alt=""></a>
+      </div>
+  <h2 class="tab-label collapsed">Plain Background</h2>
+        <a href="plain.html"><img src="img/vorschau_plain.png" alt=""></a>
+      </div>
+    <p class="notes"> If you seek for more information about us click <a class="notes" href="legal.html">here</a></p>
+  </section>
+  <script src="javascript/jquery.js"></script>
+  <script id="rendered-js" src="javascript/slider_function.js"></script>
 </body>
 </html>
