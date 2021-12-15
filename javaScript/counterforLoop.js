@@ -4,7 +4,7 @@ const   second = 1000,
 
 function startTimer() {
  var  userTimeInput = (document.getElementById("time").value); //minute
-  stoppyBool = false;
+ stoppyBool = false;
 
 countdown(userTimeInput);
 //has to be defined as async to allow for sleep beeing used
@@ -35,11 +35,11 @@ function sleep(ms) {
 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
+  stoppyBool = true;
 }
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
-  let time = document.getElementById("time").value;
 }
 
 function changeTitle() {
