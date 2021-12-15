@@ -7,7 +7,6 @@ function startTimer() {
   stoppyBool = false;
 
 countdown(userTimeInput);
-
 //has to be defined as async to allow for sleep beeing used
 async function countdown(x) {
       for (var j = userTimeInput; j > 0; j--) {
