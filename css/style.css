@@ -185,3 +185,24 @@ p {
 .tabs-container.tabs-processed .tab-panel {
     background-color: rgb(230,230,230,.6);
 }
+
+@media (max-width: 850px),(max-height: 765px) {
+  li span {
+    font-size: 1.3em;
+  }
+  li {
+        margin-top: 3%;
+        padding: 0px;
+        padding-top: 25px;
+      }
+  .minutes, .seconds {
+    font-size: 1.5em;
+  }
+  ul {
+    margin-block-start: .2em;
+    margin-block-end: .2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+  }
+}
